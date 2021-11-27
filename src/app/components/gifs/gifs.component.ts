@@ -34,13 +34,13 @@ export class GifsComponent implements OnInit, OnDestroy {
     this.giftSubscribe.unsubscribe();
   }
 
-  addPage() {
-    this.page++
+  incrementPage() {
+    this.page++;
   }
 
-  lessPage() {
+  decrementPage() {
     if (this.page != 1) {
-      this.page--
+      this.page--;
     }
   }
 

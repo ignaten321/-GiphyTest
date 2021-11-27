@@ -1,7 +1,7 @@
 <div class="container gifs text-center">
-    <button type="button" class="btn btn-secondary" (click)="addPage()">Next</button>
+    <button type="button" class="btn btn-secondary" (click)="incrementPage()">Next</button>
     <span style="font-size: 26px; margin: 10px;">{{page}}</span>
-    <button type="button" class="btn btn-secondary" (click)="lessPage()">Befor</button>
+    <button type="button" class="btn btn-secondary" (click)="decrementPage()">Befor</button>
 
     <div class="row mt-4">
         <div class="col-4" *ngFor="let gif of gifs[page]">
